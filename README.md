@@ -4,4 +4,4 @@ Converterts from provided numbers to words.
 
 number - number to convert
 
-currency - currency (3 letters)
+currency - currency (3 letters) (PLN, USD, EUR)
