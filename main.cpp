@@ -27,6 +27,8 @@ int main(int argc, char** argv)  {
         cin >> strCurrency;
     }
 
+    oConv.checkCents(strCurrency);
+
     float pos = strNumber.find(".");
 
     if(pos!=string::npos) {
@@ -41,7 +43,7 @@ int main(int argc, char** argv)  {
 
     oConv.conv(oConv.out);
 
-    cout << strCurrency.substr(0,3);
+    cout << oConv.currencyOut;
 
    if(pos!=string::npos) {
 
@@ -51,6 +53,7 @@ int main(int argc, char** argv)  {
 
             oConv.parse(oConv.number2, 1000, oConv.out);
             oConv.conv(oConv.out);
+            cout << oConv.centsOut;
    }
    cout << endl;
 }

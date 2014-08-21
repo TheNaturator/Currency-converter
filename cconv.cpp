@@ -24,6 +24,28 @@ void cConv::parse(int number, int n, vector<int> &result)  {
 }
 
 
+void cConv::checkCents(string currency){
+
+    if(currency=="PLN"){
+        currencyOut = "Polish Złoty";
+        centsOut = "groszy";
+    }
+    else if(currency=="EUR"){
+        currencyOut = "Euro";
+        centsOut = "cents";
+    }
+    else if(currency=="USD"){
+        currencyOut = "US Dollars";
+        centsOut = "cents";
+    }
+    else
+        centsOut = "";
+    }
+
+
+
+
+
 void cConv::conv(vector<int> out){
 
     string tmptext = "";

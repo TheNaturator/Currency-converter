@@ -21,6 +21,9 @@ public:
     int number2;
     vector<int> konwOut;
     string text;
+    void checkCents(string currency);
+    string centsOut;
+    string currencyOut;
 private:
 
 };
